@@ -1,4 +1,4 @@
-name: CI Pipeline
+name: ci checks
 
 on:
   pull_request:
@@ -14,7 +14,6 @@ jobs:
           echo "Skipping npm install"
           echo "Add your lint command here"
           # Example: eslint . --no-eslintrc
-
   test:
     runs-on: ubuntu-latest
     steps:
